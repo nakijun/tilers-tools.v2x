@@ -75,6 +75,8 @@ if __name__=='__main__':
         help='force using BSB datum shift to WGS84 instead of native BSB datum')
     parser.add_option("--dtm",dest="dtm_shift",default=None,metavar="SHIFT_LONG,SHIFT_LAT",
         help='northing and easting to WGS84 datum in seconds of arc')
+    parser.add_option("--use-tps", action="store_true",
+        help='use GCP_TPS interpolation method isntead of GCP_POLYNOMIAL')
     parser.add_option("--get-cutline", action="store_true",
         help='print a definition of a cutline polygon, then exit')
     parser.add_option("--cut-file", action="store_true",
